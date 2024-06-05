@@ -1,80 +1,62 @@
 import React from "react";
-import ig from '../imagens/instagram.png'
-import './Footer.css'
+import ig from '../imagens/instagram.png';
+import wp from '../imagens/whatsapp.png';
+import './Footer.css';
 
 const Footer = () => {
     return (
         <div className="footer">
-            <div className="sb__footer section__padding">
-                <div className="sb__footer-links">
-                    <div className="sb__footer-links_div">
-                        <h4>For bussines</h4>
-                        <a href="/employer">
-                            <p>employer</p>
-                        </a>
-                        <a href="/healthplan">
-                            <p>healthplan</p>
-                        </a>
-                        <a href="/individual">
-                            <p>individual</p>
+            <div className="footer section__padding">
+                <div className="footer-links">
+                    <div className="footer-links_div">
+                        <h4>Quem Somos?</h4>
+                        <h5>A Hype nasceu do sonho de transformar a forma como as pessoas se vestem. Desde o início, acreditamos que a moda vai além das tendências passageiras </h5>
+                        <a href="/saiba-mais">
+                            <p>Saiba mais</p>
                         </a>
                     </div>
-                    <div className="sb__footer-links_div">
-                        <h4>Resources</h4>
+                    <div className="footer-links_div">
+                        <h4>Ajuda</h4>
                         <a href="/resources">
-                            <p>Resource center</p>
+                            <p>Nosso atendimento</p>
                         </a>
                         <a href="/resources">
-                            <p>Testimonials</p>
-                        </a>
-                        <a href="/resources">
-                            <p>STV</p>
+                            <p>Formas de pagamento</p>
                         </a>
                     </div>
-                    <div className="sb__footer-links_div">
-                        <h4>Paterns</h4>
-                        <a href="/employer">
-                            <p>Swing tech</p>
-                        </a>
-                    </div>
-                    <div className="sb__footer-links_div">
-                        <h4>Company</h4>
+                    <div className="footer-links_div">
+                        <h4>Suporte</h4>
                         <a href="/about">
-                            <p>About</p>
+                            <p>Entrega</p>
                         </a>
                         <a href="/press">
-                            <p>Press</p>
+                            <p>Pedidos</p>
                         </a>
                         <a href="/career">
-                            <p>Career</p>
-                        </a>
-                        <a href="/contact">
-                            <p>Contact</p>
+                            <p>Produtos</p>
                         </a>
                     </div>
-                    <div className="sb__footer-links_div">
-                        <h4>Coming soon on</h4>
+                    <div className="footer-links_div">
+                        <h4>Mídia Social</h4>
                         <div className="socialmedia">
                             <p><img src={ig} alt="" /></p>
-                            <p><img src={ig} alt="" /></p>
-                            <p><img src={ig} alt="" /></p>
-                            <p><img src={ig} alt="" /></p>
+                            <p><img src={wp} alt="" /></p>
                         </div>
                     </div>
                 </div>
 
                 <hr />
 
-                <div className="sb__footer-below">
-                    <div className="sb__footer-copyright">
+                <div className="footer-below">
+                    <div className="footer-copyright">
                         <p>
                             @{new Date().getFullYear()} CodeInn. All right reserved.
                         </p>
                     </div>
-                    <div className="sb__footer-below-links">
-                        <a href="/terms"><div><p>Terms & condictions</p></div></a>
-                        <a href="/privacy"><div><p>Privacy</p></div></a>
-                        <a href="/security"><div><p>Security</p></div></a>
+                    <div className="footer-below-links">
+                        <a href="/terms"><div><p>Termos e condições</p></div></a>
+                        <a href="/privacy"><div><p>Privacidade</p></div></a>
+                        <a href="/security"><div><p>Segurança</p></div></a>
                     </div>
                 </div>
             </div>
