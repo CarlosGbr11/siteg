@@ -1,15 +1,19 @@
 .anuncios-container {
     display: flex;
-    justify-content: center;
-    gap: 100px;
-    margin-top: 100px; 
+    flex-wrap: wrap; /* Permite que os elementos quebrem para a próxima linha */
+    justify-content: space-between; /* Distribui os elementos igualmente na linha */
+    gap: 30px; /* Espaçamento entre os anúncios */
+    padding: 20px 0; /* Adiciona um espaçamento interno para os anúncios */
 }
 
 .anuncio {
-    text-align: center;
+    flex: 0 0 calc(33.33% - 20px); /* Define a largura para que haja 3 anúncios por linha com espaçamento entre eles */
+    text-align: center; /* Centraliza o conteúdo dentro de cada anúncio */
+    margin-bottom: 20px; /* Espaçamento abaixo de cada anúncio */
 }
 
 .anuncio img {
-    width: 200px; 
-    height: auto;
+    width: 160px;
+    max-width: 100%; /* Garante que a largura da imagem não ultrapasse o contêiner do anúncio */
+    height: auto; /* Mantém a proporção da imagem */
 }
