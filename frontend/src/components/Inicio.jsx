@@ -1,9 +1,11 @@
 import React, { useState, useEffect } from "react";
 import slide1 from '../images/slide1.jpg';
 import slide2 from '../images/slide2.jpg';
-import './Inicio.css'; 
+import Anuncios from "./Anuncios";
+import './Inicio.css';
 
 function Inicio() {
+
     const imagens = [slide1, slide2];
     const [indiceAtual, setIndiceAtual] = useState(0);
 
@@ -24,10 +26,9 @@ function Inicio() {
     };
 
     return (
+
         <div className="carousel">
             <img src={imagens[indiceAtual]} alt={`Imagem ${indiceAtual + 1}`} className="carousel-image" />
-            <button className="carousel-button left" onClick={voltarSlide}>&#10094;</button>
-            <button className="carousel-button right" onClick={proximoSlide}>&#10095;</button>
             <div className="carousel-indicators">
                 {imagens.map((_, indice) => (
                     <span
@@ -36,7 +37,9 @@ function Inicio() {
                     ></span>
                 ))}
             </div>
+            <Anuncios /> 
         </div>
+        
     );
 }
 
