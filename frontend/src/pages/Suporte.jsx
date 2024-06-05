@@ -47,8 +47,12 @@ const Suporte = () => {
                 <strong>Entregue para transportadora:</strong> O pedido está pronto para ser enviado para o endereço cadastrado;
                 Pedido entregue: Notificação de que o pacote foi entregue.
             </p>
+            <h2>Nossos Produtos</h2>
+            <p>
+            Na Hype, acreditamos que cada cliente merece o melhor. É por isso que nos dedicamos a importar apenas os produtos mais confiáveis e desejados do mercado americano. Nosso objetivo é proporcionar a você a sensação de caminhar com estilo e confiança, sabendo que está usando o que há de melhor em tênis esportivos e casuais.
+            </p>
 
-        </div >
+        </div>
     );
 }
 
