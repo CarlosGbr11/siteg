@@ -4,11 +4,11 @@ import tenis1 from '../images/tenis1.jpg';
 import tenis2 from '../images/tenis2.jpg'; 
 import tenis3 from '../images/tenis3.jpg'; 
 import tenis4 from '../images/tenis4.jpg'; 
-import tenis5 from '../images/tenis5.jpg'; 
-import tenis6 from '../images/tenis6.jpg'; 
-import tenis7 from '../images/tenis7.jpg'; 
-import tenis8 from '../images/tenis8.jpg'; 
-import tenis9 from '../images/tenis9.jpg'; 
+import nike1 from '../images/nike1.jpg'; 
+import nike2 from '../images/nike2.jpg'; 
+import nike3 from '../images/nike3.jpg'; 
+import nike4 from '../images/nike4.jpg'; 
+import nike5 from '../images/nike5.jpg'; 
 
 
 function Anuncios() {
@@ -35,29 +35,29 @@ function Anuncios() {
                 <p>R$ 839,99</p>
             </div>
             <div className="anuncio">
-                <img src={tenis5} alt="Tênis 5" />
-                <h3>STAN SMITH</h3>
-                <p>R$ 339,99</p>
+                <img src={nike1} alt="nike 1" />
+                <h3>AIR MAX 90</h3>
+                <p>R$ 699,99</p>
             </div>
             <div className="anuncio">
-                <img src={tenis6} alt="Tênis 6" />
-                <h3>FORUM 84 LOW</h3>
+                <img src={nike2} alt="nike 2" />
+                <h3>CORTEZ SE</h3>
                 <p>R$ 579,99</p>
             </div>
             <div className="anuncio">
-                <img src={tenis7} alt="Tênis 7" />
-                <h3>HANDBALL SPEZIAL</h3>
-                <p>R$ 399,99</p>
+                <img src={nike3} alt="nike 3" />
+                <h3>DUNK LOW REMASTERED</h3>
+                <p>R$ 999,99</p>
             </div>
             <div className="anuncio">
-                <img src={tenis8} alt="Tênis 8" />
-                <h3>ADI2000</h3>
-                <p>R$ 799,99</p>
+                <img src={nike4} alt="nike 4" />
+                <h3>ZOOM VOMERO 5 SP</h3>
+                <p>R$ 809,99</p>
             </div>
             <div className="anuncio">
-                <img src={tenis9} alt="Tênis 9" />
-                <h3>SUPERSTAR XLG</h3>
-                <p>R$ 399,99</p>
+                <img src={nike5} alt="nike 5" />
+                <h3>JA 1 CNY</h3>
+                <p>R$ 899,99</p>
             </div>
         </div>
     );
