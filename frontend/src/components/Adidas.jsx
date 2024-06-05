@@ -1,9 +1,9 @@
 import React from "react";
 import './Anuncios.css'
-import tenis1 from '../images/tenis1.jpg'; 
-import tenis2 from '../images/tenis2.jpg'; 
-import tenis3 from '../images/tenis3.jpg'; 
-import tenis4 from '../images/tenis4.jpg'; 
+import adidas1 from '../images/adidas1.jpg'; 
+import adidas2 from '../images/adidas2.jpg'; 
+import adidas3 from '../images/adidas3.jpg'; 
+import adidas4 from '../images/adidas4.jpg'; 
 import tenis5 from '../images/tenis5.jpg'; 
 import tenis6 from '../images/tenis6.jpg'; 
 import tenis7 from '../images/tenis7.jpg'; 
@@ -15,23 +15,23 @@ function Anuncios() {
     return (
         <div className="anuncios-container">
             <div className="anuncio">
-                <img src={tenis1} alt="Tênis 1" />
-                <h3>DUNK LOW OG</h3>
-                <p>R$ 589,99</p>
+                <img src={adidas1} alt="adidas 1" />
+                <h3>CAMPUS 00S</h3>
+                <p>R$ 699,99</p>
             </div>
             <div className="anuncio">
-                <img src={tenis2} alt="Tênis 2" />
-                <h3>DUNK LOW RETRO</h3>
-                <p>R$ 639,99</p>
+                <img src={adidas2} alt="adidas 2" />
+                <h3>FORUM LOW CL</h3>
+                <p>R$ 539,99</p>
             </div>
             <div className="anuncio">
-                <img src={tenis3} alt="Tênis 3" />
-                <h3>AIR FORCE 1 ´07 LV8</h3>
-                <p>R$ 679,99</p>
+                <img src={adidas3} alt="adidas 3" />
+                <h3>OZWEEGO</h3>
+                <p>R$ 449,99</p>
             </div>
             <div className="anuncio">
-                <img src={tenis4} alt="Tênis 4" />
-                <h3>JORDAN 1 MID</h3>
+                <img src={adidas4} alt="adidas 4" />
+                <h3>OZELIA</h3>
                 <p>R$ 839,99</p>
             </div>
             <div className="anuncio">
