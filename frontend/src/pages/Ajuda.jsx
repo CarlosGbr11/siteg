@@ -1,9 +1,5 @@
 import React from "react";
 import './LinksFooter.css';
-import elo from '../images/elo.png';
-import master from '../images/mastercard.png';
-import pix from '../images/pix.png';
-import visa from '../images/visa.png';
 
 const Ajuda = () => {
     return (
@@ -25,15 +21,20 @@ const Ajuda = () => {
                 <strong>Enviar o Comentário:</strong>
                 Após escrever seu comentário e, se aplicável, selecionar uma classificação, clique no botão "Enviar", "Postar" ou similar para enviar seu comentário.
             </p>
-            
-            <h2>Formas de pagamento</h2>
-            <div className="formas-pagamento">
-                <img src={elo} alt="elo" />
-                <img src={master} alt="master" />
-                <img src={pix} alt="pix" />
-                <img src={visa} alt="visa" />
-            </div>
 
+            <h2>Resolução de problemas</h2>
+            <p>
+                <strong>Limpe o Cache do Navegador:</strong>
+                Às vezes, problemas de exibição ou funcionalidade podem ser causados por arquivos em cache. Limpar o cache do seu navegador pode resolver esses problemas.
+            </p>
+            <p>
+                <strong>Atualize seu Navegador:</strong>
+                Certifique-se de estar usando a versão mais recente do seu navegador. Atualizações frequentes podem corrigir bugs e melhorar a estabilidade.
+            </p>
+            <p>
+                <strong>Verifique sua Conexão com a Internet:</strong>
+                Problemas de conexão com a internet podem afetar a funcionalidade do site. Certifique-se de estar conectado a uma rede estável e tente atualizar a página.
+            </p>
         </div>
     )
 }
