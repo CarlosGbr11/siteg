@@ -10,7 +10,7 @@ const Footer = () => {
                 <div className="footer-links">
                     <div className="footer-links_div">
                         <h4>Quem Somos?</h4>
-                        <h5>Na Hype, acreditamos que um bom par de tênis pode fazer toda a diferença na sua vida. Seja você um atleta em busca de desempenho superior, um entusiasta da moda querendo destacar-se com estilo, temos o par perfeito para você! </h5>
+                        <h5>Na Hype, acreditamos que um bom par de tênis pode fazer toda a diferença na sua vida, temos o par perfeito para você! </h5>
                         <a href="/quem/somos">
                             <p>Saiba mais</p>
                         </a>
@@ -18,7 +18,7 @@ const Footer = () => {
                     <div className="footer-links_div">
                         <h4>Ajuda</h4>
                         <a href="/ajuda">
-                            <p>Nosso atendimento</p>
+                            <p>Como comentar</p>
                         </a>
                         <a href="/ajuda">
                             <p>Formas de pagamento</p>
@@ -27,13 +27,10 @@ const Footer = () => {
                     <div className="footer-links_div">
                         <h4>Suporte</h4>
                         <a href="/suporte">
-                            <p>Entrega</p>
+                            <p>Política de moderação</p>
                         </a>
                         <a href="/suporte">
-                            <p>Pedidos</p>
-                        </a>
-                        <a href="/suporte">
-                            <p>Produtos</p>
+                            <p>Contato</p>
                         </a>
                     </div>
                     <div className="footer-links_div">
