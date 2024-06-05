@@ -4,52 +4,29 @@ import './LinksFooter.css';
 const Suporte = () => {
     return (
         <div className="suporte-container">
-            <h2>Regras de Entrega</h2>
+
+            <h2>Politica de moderação</h2>
             <p>
-                As entregas são realizadas de segunda a sexta, das 9h às 18h, exceto feriados.
+                <strong>Respeito:</strong>
+                Todos os comentários devem ser respeitosos. Comentários que contenham linguagem ofensiva, discriminatória, difamatória ou insultuosa serão removidos.
             </p>
             <p>
-                Toda entrega deverá ter o comprovante assinado pelo recebedor, com preenchimento de data, nome legível e número do RG.
+                <strong>Relevância:</strong>
+                Os comentários devem ser relevantes para o produto em questão. Evite discussões que não estejam diretamente relacionadas ao calçado em avaliação.
             </p>
             <p>
-                <strong>Entregas via Correios:</strong> Locais de destino com baixa população, de difícil acesso ou distantes das capitais podem necessitar de mais prazo para a entrega ou serem retirados na agência dos Correios mais próxima.
+                <strong>Conteúdo Original:</strong>
+                Comentários devem ser baseados em experiências pessoais genuínas com o produto. Evite copiar e colar avaliações de outros sites ou fontes.
             </p>
             <p>
-                Locais de destino sujeitos a prazo diferenciado pelos Correios podem ter um acréscimo de até 4 dias úteis para a entrega ou necessitar que os itens sejam retirados na agência dos Correios mais próxima.
-            </p>
-            <p>
-                Para consultar se o CEP de destino tem restrição de entrega, <a href="https://www.correios.com.br" target="_blank" rel="noopener noreferrer">clique aqui</a> e consulte no site dos Correios. Preencha o CEP de Origem 06833-073, o CEP de Destino da entrega e o Tipo de Serviço.
-            </p>
-            <p>
-                As entregas são realizadas apenas dentro do território nacional.
-            </p>
-            <p>
-                Não haverá reembolso do frete ao cliente em caso de uma segunda troca dos mesmos produtos ou pedido.
-            </p>
-            <p>
-                Em caso de dúvidas ou esclarecimentos, por favor, contate nosso serviço de  Atendimento ao Cliente.
+                <strong>Sem Spam:</strong>
+                Comentários que sejam considerados spam, incluindo links não relacionados ou autopromoção, serão removidos.
             </p>
 
-            <h2>Como acompanhar meu pedido?</h2>
+            <h2>Contato</h2>
             <p>
-                Ao realizar um pedido em nossa loja online você receberá comunicações diretamente em seu e-mail cadastrado a cada nova etapa avançada, até o momento da entrega.
-            </p>
-            <p>
-                <strong>Eles são separados por categorias:</strong>
-            </p>
-            <p>
-                <strong>Pedido realizado:</strong> Significa que acabamos de receber o seu pedido e estamos analisando as informações;
-            </p>
-            <p>
-                <strong>Status do pagamento:</strong> Nessa etapa será informado se seu pagamento foi concluído ou não. Confira aqui mais detalhes sobre prazos para aprovação;
-            </p>
-            <p>
-                <strong>Entregue para transportadora:</strong> O pedido está pronto para ser enviado para o endereço cadastrado;
-                Pedido entregue: Notificação de que o pacote foi entregue.
-            </p>
-            <h2>Nossos Produtos</h2>
-            <p>
-            Na Hype, acreditamos que cada cliente merece o melhor. É por isso que nos dedicamos a importar apenas os produtos mais confiáveis e desejados do mercado americano. Nosso objetivo é proporcionar a você a sensação de caminhar com estilo e confiança, sabendo que está usando o que há de melhor em tênis esportivos e casuais.
+            <strong>Envie-nos um Email:</strong>
+            Você também pode nos enviar um email para suporte@hype.com Nossa equipe de suporte está sempre pronta para ajudar!
             </p>
 
         </div>
