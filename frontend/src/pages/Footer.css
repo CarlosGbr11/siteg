@@ -6,12 +6,12 @@
   background-color: rgb(0, 0, 0);
 }
 
-.sb__footer{
+.footer{
   display: flex;
   flex-direction: column;
 }
 
-.sb__footer-links{
+.footer-links{
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
@@ -22,7 +22,7 @@
   margin-bottom: 2rem;
 }
 
-.sb__footer-links_div{
+.footer-links_div{
   width: 150px;
   margin: 1rem;
   display: flex;
@@ -32,7 +32,7 @@
 }
 
 a{
-  color: beige;
+  color: rgb(182, 182, 182);
   text-decoration: none;
 }
 
@@ -42,35 +42,43 @@ a{
 }
 
 .socialmedia img{
-  width: 80%;
+  width: 100%;
+  padding: 2px;
 }
 
-.sb__footer-links_div h4{
+.footer-links_div h4{
   font-size: 14px;
   line-height: 17px;
-  margin-bottom: 0,9rem;
+  margin-bottom: 1rem;
 }
 
-.sb__footer-links_div p{
+.footer-links_div h5{
+  color: rgb(158, 158, 158);
+  font-size: 12px;
+  line-height: 17px;
+  margin-bottom: 2rem;
+}
+
+.footer-links_div p{
   font-size: 12px;
   line-height: 15px;
   margin: 0.5rem 0;
   cursor: pointer;
 }
 
-.sb__footer-below{
+.footer-below{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   margin-top: 0.2rem;
 }
 
-.sb__footer-below-links{
+.footer-below-links{
   display: flex;
   flex-direction: row;
 }
 
-.sb__footer-below-links p{
+.footer-below-links p{
   font-size: 13px;
   line-height: 15px;
   margin-left: 2rem;
@@ -83,48 +91,9 @@ hr{
   width: 100%;
 }
 
-.sb__footer-copyright p{
+.footer-copyright p{
   font-size: 13px;
   line-height: 15px;
   color: white;
   font-weight: 600;
-}
-
-@media screen and (max-width: 800px) {
-  .sb__footer-heading h1{
-    font-size: 44px;
-    line-height: 50px;
-  }
-}
-
-@media screen and (max-width: 550px) {
-  .sb__footer-heading h1{
-    font-size: 34px;
-    line-height: 42px;
-  }
-  .sb__footer-links div{
-    margin: 1rem 0;
-  }
-  .sb__footer-btn p{
-    font-size: 14px;
-    line-height: 20px;
-  }
-  .sb__footer-below{
-    flex-direction: column;
-    justify-content: left;
-  }
-  .sb__footer-below-links{
-    flex-direction: column;
-  }
-  .sb__footer-below-links p{
-    margin-left: 0rem;
-    margin-top: 1rem;
-  }
-}
-
-@media screen and (max-width: 400px) {
-  .sb__footer-heading h1{
-    font-size: 27px;
-    line-height: 38px;
-  }
 }
