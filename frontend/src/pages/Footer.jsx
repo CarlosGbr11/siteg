@@ -10,29 +10,29 @@ const Footer = () => {
                 <div className="footer-links">
                     <div className="footer-links_div">
                         <h4>Quem Somos?</h4>
-                        <h5>A Hype nasceu do sonho de transformar a forma como as pessoas se vestem. Desde o início, acreditamos que a moda vai além das tendências passageiras </h5>
-                        <a href="/saiba-mais">
+                        <h5>Na Hype, acreditamos que um bom par de tênis pode fazer toda a diferença na sua vida. Seja você um atleta em busca de desempenho superior, um entusiasta da moda querendo destacar-se com estilo, temos o par perfeito para você! </h5>
+                        <a href="/quem/somos">
                             <p>Saiba mais</p>
                         </a>
                     </div>
                     <div className="footer-links_div">
                         <h4>Ajuda</h4>
-                        <a href="/resources">
+                        <a href="/ajuda">
                             <p>Nosso atendimento</p>
                         </a>
-                        <a href="/resources">
+                        <a href="/ajuda">
                             <p>Formas de pagamento</p>
                         </a>
                     </div>
                     <div className="footer-links_div">
                         <h4>Suporte</h4>
-                        <a href="/about">
+                        <a href="/suporte">
                             <p>Entrega</p>
                         </a>
-                        <a href="/press">
+                        <a href="/suporte">
                             <p>Pedidos</p>
                         </a>
-                        <a href="/career">
+                        <a href="/suporte">
                             <p>Produtos</p>
                         </a>
                     </div>
