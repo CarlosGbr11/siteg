@@ -1,0 +1,46 @@
+.comprar-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 600px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+.tenis-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.tenis-nome {
+    font-size: 24px;
+    margin: 20px 0 10px;
+    text-align: center;
+}
+
+.tenis-preco {
+    font-size: 20px;
+    color: #888;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.btn-comprar {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #28a745;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-comprar:hover {
+    background-color: #218838;
+}
