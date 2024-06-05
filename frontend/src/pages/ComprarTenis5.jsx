@@ -9,7 +9,7 @@ const ComprarTenis5 = () => {
             <img src={tenis5} alt="Tênis 5" className="tenis-img"/>
             <h3 className="tenis-nome">STAN SMITH</h3>
             <p className="tenis-preco">R$ 339,99</p>
-            <button className="btn-comprar">Adicionar ao Carrinho</button>
+            <button className="btn-comprar">Adicionar comentário</button>
         </div>
     );
 }
