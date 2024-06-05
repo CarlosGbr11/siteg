@@ -39,8 +39,8 @@ const Footer = () => {
                     <div className="footer-links_div">
                         <h4>Mídia Social</h4>
                         <div className="socialmedia">
-                            <p><img src={ig} alt="" /></p>
-                            <p><img src={wp} alt="" /></p>
+                        <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer"><p><img src={ig} alt="insta" /></p></a>
+                        <a href="https://web.whatsapp.com/" target="_blank" rel="noopener noreferrer"><p><img src={wp} alt="wpp" /></p></a>
                         </div>
                     </div>
                 </div>
@@ -56,7 +56,6 @@ const Footer = () => {
                     <div className="footer-below-links">
                         <a href="/terms"><div><p>Termos e condições</p></div></a>
                         <a href="/privacy"><div><p>Privacidade</p></div></a>
-                        <a href="/security"><div><p>Segurança</p></div></a>
                     </div>
                 </div>
             </div>
