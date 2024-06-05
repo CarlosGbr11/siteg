@@ -1,13 +1,14 @@
 import React from "react";
-import tenis1 from '../images/tenis1.jpg'; 
+import tenis1 from '../images/tenis1.jpg';
+import './ComprarTenis.css'; 
 
 const ComprarTenis1 = () => {
     return (
-        <div>
-            <img src={tenis1} alt="Tênis 1" />
-            <h3>DUNK LOW RETRO</h3>
-            <p>R$ 639,99</p>
-            <p>Adicionar ao Carrinho</p>
+        <div className="comprar-container">
+            <img src={tenis1} alt="Tênis 1" className="tenis-img" />
+            <h3 className="tenis-nome">DUNK LOW RETRO</h3>
+            <p className="tenis-preco">R$ 639,99</p>
+            <button className="btn-comprar">Adicionar ao Carrinho</button>
         </div>
     );
 }
