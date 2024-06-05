@@ -1,0 +1,33 @@
+.suporte-container {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.suporte-container h2 {
+    font-size: 1.8em;
+    margin-bottom: 15px;
+    color: #333;
+    text-align: center;
+}
+
+.suporte-container p {
+    margin-bottom: 15px;
+    font-size: 1em;
+    color: #555;
+}
+
+.suporte-container a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.suporte-container a:hover {
+    text-decoration: underline;
+}
+
+.suporte-container strong {
+    color: #333;
+}
