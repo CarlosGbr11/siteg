@@ -1,6 +1,6 @@
 import React from "react";
-import ig from '../imagens/instagram.png';
-import wp from '../imagens/whatsapp.png';
+import ig from '../images/instagram.png';
+import wp from '../images/whatsapp.png';
 import './Footer.css';
 
 const Footer = () => {
