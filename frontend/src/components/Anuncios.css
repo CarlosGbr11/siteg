@@ -1,19 +1,23 @@
 .anuncios-container {
     display: flex;
-    flex-wrap: wrap; /* Permite que os elementos quebrem para a próxima linha */
-    justify-content: space-between; /* Distribui os elementos igualmente na linha */
-    gap: 30px; /* Espaçamento entre os anúncios */
-    padding: 20px 0; /* Adiciona um espaçamento interno para os anúncios */
+    flex-wrap: wrap; 
+    justify-content: space-between; 
+    gap: 30px; 
+    padding: 20px 0; 
 }
 
 .anuncio {
-    flex: 0 0 calc(33.33% - 20px); /* Define a largura para que haja 3 anúncios por linha com espaçamento entre eles */
-    text-align: center; /* Centraliza o conteúdo dentro de cada anúncio */
-    margin-bottom: 20px; /* Espaçamento abaixo de cada anúncio */
+    flex: 0 0 calc(33.33% - 20px); 
+    text-align: center; 
+    margin-bottom: 20px; 
 }
 
 .anuncio img {
     width: 160px;
-    max-width: 100%; /* Garante que a largura da imagem não ultrapasse o contêiner do anúncio */
-    height: auto; /* Mantém a proporção da imagem */
+    max-width: 100%; 
+    height: auto; 
+}
+
+.anuncio p, h3{
+    color: rgb(54, 54, 54);
 }
