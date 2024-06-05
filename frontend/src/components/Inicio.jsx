@@ -1,12 +1,13 @@
 import React, { useState, useEffect } from "react";
 import slide1 from '../images/slide1.jpg';
 import slide2 from '../images/slide2.jpg';
+import slide3 from '../images/slide3.jpg';
 import Anuncios from "./Anuncios";
 import './Inicio.css';
 
 function Inicio() {
 
-    const imagens = [slide1, slide2];
+    const imagens = [slide1, slide2, slide3];
     const [indiceAtual, setIndiceAtual] = useState(0);
 
     useEffect(() => {
