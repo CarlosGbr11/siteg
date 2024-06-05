@@ -1,8 +1,11 @@
 import React from "react";
+import tenis7 from '../images/tenis7.jpg'; 
 
-const ComprarTenis1 = () => {
+
+const ComprarTenis7 = () => {
     return (
         <div>
+            <img src={tenis7} alt="Tênis 7" />
             <h3>HANDBALL SPEZIAL</h3>
             <p>R$ 399,99</p>
             <p>Adicionar ao Carrinho</p>
@@ -10,4 +13,4 @@ const ComprarTenis1 = () => {
     );
 }
 
-export default ComprarTenis1;
+export default ComprarTenis7;
