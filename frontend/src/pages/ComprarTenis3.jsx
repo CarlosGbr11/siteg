@@ -9,7 +9,7 @@ const ComprarTenis3 = () => {
             <img src={tenis3} alt="Tênis 3" className="tenis-img"/>
             <h3 className="tenis-nome">AIR FORCE 1 ´07 LV8</h3>
             <p className="tenis-preco">R$ 679,99</p>
-            <button className="btn-comprar">Adicionar ao Carrinho</button>
+            <button className="btn-comprar">Adicionar comentário</button>
         </div>
     );
 }
