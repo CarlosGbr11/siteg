@@ -11,6 +11,10 @@
     background-color: #fff;
 }
 
+.comentario-input{
+    padding: 40px;
+}
+
 .tenis-img {
     max-width: 100%;
     height: auto;
@@ -38,7 +42,7 @@
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s;
+    margin-top: 20px;
 }
 
 .btn-comprar:hover {
