@@ -1,14 +1,14 @@
 import connection from '../config/Conecta.js';
 
 export function read(callback){
-    connection.query('SELECT * from pessoas_dados', callback);
+    connection.query('SELECT * from feedback', callback);
 }
-export function create(nome,dataNascimento,genero,cpf,telefone,callback){
-    connection.query('INSERT INTO pessoas_dados (nome, dataNascimento, genero, cpf, telefone, ativo_pessoa) VALUES (?, ?, ?, ?, ?,1)', [nome,dataNascimento,genero,cpf,telefone], callback);
+export function create(texto, ativo_feedback, callback){
+    connection.query('INSERT INTO feedback (texto, ativo_feedback) VALUES (?, 1)', [texto, ativo_feedback], callback);
 }
-export function update(nome, dataNascimento, genero, cpf, telefone, id, callback) {
-    connection.query("UPDATE pessoas_dados SET nome = ?, dataNascimento = ?, genero = ?, cpf = ?, telefone = ?, ativo_pessoa = 1 WHERE idpessoa = ?", [nome, dataNascimento, genero, cpf, telefone, id], callback);
+export function update(texto, id, callback) {
+    connection.query("UPDATE feedback SET texto = ?, ativo_feedback = 1 WHERE idfeedback = ?", [texto, id], callback);
 }
-export function deletePes(id, callback) {
-    connection.query('DELETE from pessoas_dados where idpessoa = ?', [id], callback);
+export function deleteFeed(id, callback) {
+    connection.query('DELETE from feedback where idfeedback = ?', [id], callback);
 }
