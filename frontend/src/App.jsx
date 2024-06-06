@@ -2,8 +2,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Footer from './pages/Footer';
 import Header from './pages/Header';
 import Inicio from './components/Inicio';
-import Nike from './components/Nike';
-import Adidas from './components/Adidas';
+import Comentarios from './components/Comentarios';
 import ComprarTenis1 from './pages/ComprarTenis1';
 import ComprarTenis2 from './pages/ComprarTenis2';
 import ComprarTenis3 from './pages/ComprarTenis3';
@@ -30,8 +29,7 @@ function App() {
         <main>
           <Routes>
             <Route path='/' element={<Inicio />} />
-            <Route path='/Nike' element={<Nike />} />
-            <Route path='/Adidas' element={<Adidas />} />
+            <Route path='/Nike' element={<Comentarios />} />
             <Route path="/comprar/tenis1" element={<ComprarTenis1 />} />
             <Route path="/comprar/tenis2" element={<ComprarTenis2 />} />
             <Route path="/comprar/tenis3" element={<ComprarTenis3 />} />
