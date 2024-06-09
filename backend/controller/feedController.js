@@ -1,4 +1,4 @@
-import { create, read, update, deleteFeed } from '../model/feedModel.js';
+import { create, read, update, deleteF } from '../model/feedModel.js';
 
 export async function createFeed(req, res){
     const { texto } = req.body;
@@ -39,7 +39,7 @@ export async function updateFeed(req, res) {
 export async function deleteFeed(req, res) {
     const { id } = req.params;
     console.log('delete recebidos do frontend:', {id});
-    deleteFeed(id, (err, result) => {
+    deleteF(id, (err, result) => {
         if (err) {
             res.status(500).json({ error: err.message });
             return;
