@@ -9,6 +9,6 @@ export function create(texto, ativo_feedback, callback){
 export function update(texto, id, callback) {
     connection.query("UPDATE feedback SET texto = ?, ativo_feedback = 1 WHERE idfeedback = ?", [texto, id], callback);
 }
-export function deleteFeed(id, callback) {
+export function deleteF(id, callback) {
     connection.query('DELETE from feedback where idfeedback = ?', [id], callback);
 }
