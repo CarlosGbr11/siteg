@@ -1,10 +1,10 @@
 import { create, read, update, deleteF } from '../model/feedModel.js';
 
 export async function createFeed(req, res){
-    const { texto } = req.body;
-    console.log('Dados recebidos do frontend:', { texto });
+    const { nome, texto } = req.body;
+    console.log('Dados recebidos do frontend:', { nome, texto });
 
-    create(texto, (err, result) => {
+    create( nome, texto, (err, result) => {
         if (err) {
             res.status(500).json({ error: err.message });
             return;
@@ -26,8 +26,8 @@ export async function getAllFeed(req, res) {
 export async function updateFeed(req, res) {
     const { id } = req.params;
     console.log('Dados recebidops do  frontend:', {id});
-    const { texto } = req.body;
-    update(texto, id, (err, result) => {
+    const { nome, texto } = req.body;
+    update(nome, texto, id, (err, result) => {
         if (err) {
             res.status(500).json({ error: err.message });
             return;
