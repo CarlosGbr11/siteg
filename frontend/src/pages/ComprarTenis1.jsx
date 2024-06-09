@@ -8,6 +8,7 @@ function ComprarTenis1() {
     nome: '',
     texto: '',
   });
+  const [consultaDados, setconsultaDados] = useState([]);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -39,6 +40,25 @@ function ComprarTenis1() {
     }
   };
 
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const response = await fetch('http://localhost:3000/feed', {
+          method: 'GET',
+          headers: {
+            'Content-Type': 'application/json'
+          }
+        });
+
+        const data = await response.json();
+        setconsultaDados(data);
+      } catch (err) {
+        console.error("Erro ao buscar dados no banco", err);
+      }
+    };
+    fetchData(); 
+  }, []);
+
   return (
     <div className="comprar-container">
       <img src={tenis1} alt="Tênis 1" className="tenis-img" />
@@ -56,52 +76,20 @@ function ComprarTenis1() {
         </label>
         <button type='submit' className="btn-comprar">Adicionar comentário</button>
       </form>
-      <Comentarios /> 
-    </div>
-  );
-}
-
-function Comentarios() {
-  const [consultaDados, setconsultaDados] = useState([]);
-
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-
-    try {
-      const response = await fetch('http://localhost:3000/feed', {
-        method: 'GET',
-        headers: {
-          'Content-Type': 'application/json'
-        }
-      });
-
-      const data = await response.json();
-      setconsultaDados(data);
-    } catch (err) {
-      console.error("Erro ao buscar dados no banco", err);
-    }
-  };
-
-  useEffect(() => {
-    handleSubmit(); 
-  }, []);
-
-  return (
-    <div className="read-container">
-      <form onSubmit={handleSubmit} className="read-form">
-        <button type="submit" className="read-button">Ver Comentários</button>
-      </form>
-
-      <ol className="read-list">
-        {consultaDados.map((linha, index) => (
-          <li key={index} className="read-dados">
-            <div className="dados">Nome: {linha.nome}</div>
-            <div className="dados">Texto: {linha.texto}</div>
-          </li>
-        ))}
-      </ol>
+      
+      <div className="read-container">
+        <ol className="read-list">
+          {consultaDados.map((linha, index) => (
+            <li key={index} className="read-dados">
+              <div className="dados">Nome: {linha.nome}</div>
+              <div className="dados">Feedback: {linha.texto}</div>
+            </li>
+          ))}
+        </ol>
+      </div>
     </div>
   );
 }
 
 export default ComprarTenis1;
+
