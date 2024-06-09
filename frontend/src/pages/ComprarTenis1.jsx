@@ -35,6 +35,8 @@ function ComprarTenis1() {
       console.log(response);
       console.log(json);
 
+      setFormValores({ nome: '', texto: '' });
+
     } catch (err) {
       console.error("Erro ao enviar", err);
     }
@@ -66,7 +68,7 @@ function ComprarTenis1() {
       <p className="tenis-preco">R$ 589,99</p>
 
       <form onSubmit={handleSubmit} className="comentario-form">
-      <label>
+        <label>
           Seu nome:
           <input type="text" name="nome" value={formValores.nome} onChange={handleChange} className="comentario-input" />
         </label>
@@ -92,4 +94,3 @@ function ComprarTenis1() {
 }
 
 export default ComprarTenis1;
-
