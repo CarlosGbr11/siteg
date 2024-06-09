@@ -118,7 +118,7 @@ function ComprarTenis1() {
             <li key={index} className="read-dados">
               <div className="dados">Nome: {linha.nome}</div>
               <div className="dados">Feedback: {linha.texto}</div>
-              <button onClick={() => handleEdit(linha.idfeedback, linha.nome, linha.texto)} className="btn-editar">Editar</button>
+              <button onClick={() => handleEdit(linha.idfeedback, linha.nome, linha.texto)} className="btn-editar">Responder</button>
               <button onClick={() => handleDelete(linha.idfeedback)} className="btn-deletar">Deletar</button>
             </li>
           ))}
