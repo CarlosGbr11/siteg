@@ -11,10 +11,6 @@
     background-color: #fff;
 }
 
-.comentario-input{
-    padding: 40px;
-}
-
 .tenis-img {
     max-width: 100%;
     height: auto;
@@ -32,6 +28,22 @@
     color: #888;
     margin-bottom: 20px;
     text-align: center;
+}
+
+.comentario-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.comentario-input {
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    max-width: 400px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
 }
 
 .btn-comprar {
