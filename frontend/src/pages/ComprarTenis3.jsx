@@ -3,7 +3,7 @@ import tenis3 from '../images/tenis3.jpg';
 import './ComprarTenis.css';  
 import './Comentarios.css';
 
-function ComprarTenis2() {
+function ComprarTenis3() {
   const [formValores, setFormValores] = useState({
     nome3: '',
     texto3: '',
@@ -91,5 +91,5 @@ function ComprarTenis2() {
   );
 }
 
-export default ComprarTenis2;
+export default ComprarTenis3;
 
