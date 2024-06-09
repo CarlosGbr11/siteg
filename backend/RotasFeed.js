@@ -7,10 +7,10 @@ import { getAllFeed, createFeed, updateFeed, deleteFeed } from "./controller/fee
 app.use(express.json());
 app.use(cors());
 
-app.get('/feeds', getAllFeed);
-app.post('/feeds', createFeed);
-app.put('/feeds/:id', updateFeed);
-app.delete('/feeds/:id', deleteFeed);
+app.get('/feed', getAllFeed);
+app.post('/feed', createFeed);
+app.put('/feed/:id', updateFeed);
+app.delete('/feed/:id', deleteFeed);
 
 app.listen(3000, () => {
     console.log(`Servidor rodando com sucesso na porta 3000`);
