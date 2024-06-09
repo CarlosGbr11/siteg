@@ -9,17 +9,17 @@ export async function createFeed(req, res){
             res.status(500).json({ error: err.message });
             return;
         }
-        res.status(201).json({ mensagem: 'Feedback criado com sucesso' });
+        res.status(201).json({ mensagem: 'Feed criado com sucesso' });
     });
 }
 
 export async function getAllFeed(req, res) {
-    read((err, feeds) => {
+    read((err, feed) => {
         if (err) {
             read.status(500).json({ error: err.message });
             return;
         }
-        res.json(feeds);
+        res.json(feed);
     });
 }
 
