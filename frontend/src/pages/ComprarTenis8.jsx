@@ -35,6 +35,8 @@ function ComprarTenis8() {
       console.log(response);
       console.log(json);
 
+      setFormValores({ nome8: '', texto8: '' });
+
     } catch (err) {
       console.error("Erro ao enviar", err);
     }
