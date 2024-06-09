@@ -1,9 +1,11 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from "react";
 import tenis1 from '../images/tenis1.jpg';  
 import './ComprarTenis.css';  
+import './Comentarios.css';
 
 function ComprarTenis1() {
   const [formValores, setFormValores] = useState({
+    nome: '',
     texto: '',
   });
 
@@ -44,12 +46,60 @@ function ComprarTenis1() {
       <p className="tenis-preco">R$ 589,99</p>
 
       <form onSubmit={handleSubmit} className="comentario-form">
+      <label>
+          Seu nome:
+          <input type="text" name="nome" value={formValores.nome} onChange={handleChange} className="comentario-input" />
+        </label>
         <label>
           Comentário:
           <input type="text" name="texto" value={formValores.texto} onChange={handleChange} className="comentario-input" />
         </label>
         <button type='submit' className="btn-comprar">Adicionar comentário</button>
       </form>
+      <Comentarios /> 
+    </div>
+  );
+}
+
+function Comentarios() {
+  const [consultaDados, setconsultaDados] = useState([]);
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    try {
+      const response = await fetch('http://localhost:3000/feed', {
+        method: 'GET',
+        headers: {
+          'Content-Type': 'application/json'
+        }
+      });
+
+      const data = await response.json();
+      setconsultaDados(data);
+    } catch (err) {
+      console.error("Erro ao buscar dados no banco", err);
+    }
+  };
+
+  useEffect(() => {
+    handleSubmit(); 
+  }, []);
+
+  return (
+    <div className="read-container">
+      <form onSubmit={handleSubmit} className="read-form">
+        <button type="submit" className="read-button">Ver Comentários</button>
+      </form>
+
+      <ol className="read-list">
+        {consultaDados.map((linha, index) => (
+          <li key={index} className="read-dados">
+            <div className="dados">Nome: {linha.nome}</div>
+            <div className="dados">Texto: {linha.texto}</div>
+          </li>
+        ))}
+      </ol>
     </div>
   );
 }
