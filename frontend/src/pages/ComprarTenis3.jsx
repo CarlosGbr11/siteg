@@ -109,7 +109,7 @@ function ComprarTenis3() {
           Comentário:
           <input type="text" name="texto3" value={formValores.texto3} onChange={handleChange} className="comentario-input" />
         </label>
-        <button type='submit' className="btn-comprar">{editMode ? 'Atualizar comentário' : 'Adicionar comentário'}</button>
+        <button type='submit' className="btn-comprar">{editMode ? 'Responder comentário' : 'Adicionar comentário'}</button>
       </form>
       
       <div className="read-container">
