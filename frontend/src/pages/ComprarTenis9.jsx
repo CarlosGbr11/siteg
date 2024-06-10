@@ -1,3 +1,4 @@
+// ComprarTenis9.jsx
 import React, { useState, useEffect } from "react";
 import tenis9 from '../images/tenis9.jpg';  
 import './ComprarTenis.css';  
@@ -9,6 +10,8 @@ function ComprarTenis9() {
     texto9: '',
   });
   const [consultaDados, setconsultaDados] = useState([]);
+  const [editMode, setEditMode] = useState(false);
+  const [selectedId, setSelectedId] = useState(null);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -22,43 +25,74 @@ function ComprarTenis9() {
     e.preventDefault();
 
     try {
-      console.log("Dados a serem enviados: ", formValores);
-      const response = await fetch('http://localhost:3000/feed9', {
-        method: 'POST',
+      const method = editMode ? 'PUT' : 'POST';
+      const url = editMode ? `http://localhost:3000/feed9/${selectedId}` : 'http://localhost:3000/feed9';
+
+      const response = await fetch(url, {
+        method: method,
         headers: {
           'Content-type': 'application/json'
         },
         body: JSON.stringify(formValores)
       });
 
-      const json = await response.json();
-      console.log(response);
-      console.log(json);
+      if (!response.ok) {
+        throw new Error('Erro ao enviar os dados');
+      }
 
       setFormValores({ nome9: '', texto9: '' });
+      setEditMode(false);
+      setSelectedId(null);
+      fetchData();
 
     } catch (err) {
       console.error("Erro ao enviar", err);
     }
   };
 
-  useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const response = await fetch('http://localhost:3000/feed9', {
-          method: 'GET',
-          headers: {
-            'Content-Type': 'application/json'
-          }
-        });
+  const handleEdit = (id, nome9, texto9) => {
+    setFormValores({ nome9, texto9 });
+    setSelectedId(id);
+    setEditMode(true);
+  };
 
-        const data = await response.json();
-        setconsultaDados(data);
-      } catch (err) {
-        console.error("Erro ao buscar dados no banco", err);
+  const handleDelete = async (id) => {
+    try {
+      const response = await fetch(`http://localhost:3000/feed9/${id}`, {
+        method: 'DELETE',
+        headers: {
+          'Content-Type': 'application/json'
+        }
+      });
+
+      if (!response.ok) {
+        throw new Error('Erro ao deletar os dados');
       }
-    };
-    fetchData(); 
+
+      fetchData();
+    } catch (err) {
+      console.error("Erro ao deletar", err);
+    }
+  };
+
+  const fetchData = async () => {
+    try {
+      const response = await fetch('http://localhost:3000/feed9', {
+        method: 'GET',
+        headers: {
+          'Content-Type': 'application/json'
+        }
+      });
+
+      const data = await response.json();
+      setconsultaDados(data);
+    } catch (err) {
+      console.error("Erro ao buscar dados no banco", err);
+    }
+  };
+
+  useEffect(() => {
+    fetchData();
   }, []);
 
   return (
@@ -68,7 +102,7 @@ function ComprarTenis9() {
       <p className="tenis-preco">R$ 399,99</p>
 
       <form onSubmit={handleSubmit} className="comentario-form">
-      <label>
+        <label>
           Seu nome:
           <input type="text" name="nome9" value={formValores.nome9} onChange={handleChange} className="comentario-input" />
         </label>
@@ -76,7 +110,7 @@ function ComprarTenis9() {
           Comentário:
           <input type="text" name="texto9" value={formValores.texto9} onChange={handleChange} className="comentario-input" />
         </label>
-        <button type='submit' className="btn-comprar">Adicionar comentário</button>
+        <button type='submit' className="btn-comprar">{editMode ? 'Atualizar comentário' : 'Adicionar comentário'}</button>
       </form>
       
       <div className="read-container">
@@ -85,6 +119,8 @@ function ComprarTenis9() {
             <li key={index} className="read-dados">
               <div className="dados">Nome: {linha.nome9}</div>
               <div className="dados">Feedback: {linha.texto9}</div>
+              <button onClick={() => handleEdit(linha.idfeedback9, linha.nome9, linha.texto9)} className="btn-editar">Editar</button>
+              <button onClick={() => handleDelete(linha.idfeedback9)} className="btn-deletar">Deletar</button>
             </li>
           ))}
         </ol>
@@ -94,4 +130,3 @@ function ComprarTenis9() {
 }
 
 export default ComprarTenis9;
-
