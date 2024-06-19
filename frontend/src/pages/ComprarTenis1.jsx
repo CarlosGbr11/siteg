@@ -8,6 +8,7 @@ function ComprarTenis1() {
     nome: '',
     texto: '',
   });
+  
   const [consultaDados, setconsultaDados] = useState([]);
   const [editMode, setEditMode] = useState(false);
   const [selectedId, setSelectedId] = useState(null);
