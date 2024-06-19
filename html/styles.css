@@ -25,3 +25,13 @@ body {
 textarea {
     resize: vertical;
 }
+
+/* Espaçamento entre as seções */
+.mb-4 {
+    margin-bottom: 1.5rem; /* Ajuste conforme necessário */
+}
+
+/* Espaçamento superior nos textos descritivos */
+.card-text {
+    margin-top: 1rem; /* Ajuste conforme necessário */
+}
