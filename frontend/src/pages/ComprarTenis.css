@@ -94,3 +94,28 @@
     margin-bottom: 5px;
     font-size: 14px;
 }
+
+.btn-editar{
+    background-color: #28a745;
+    color: white;
+    width: 100px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.btn-deletar{
+    background-color: rgb(228, 69, 69);
+    color: white;
+    width: 100px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.btn-editar:hover{
+    background-color: #218838;
+}
+
+.btn-deletar:hover{
+    background-color: rgb(255, 0, 0);
+}
