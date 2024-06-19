@@ -5,37 +5,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="styles.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <title>Sistema de Avaliação de Tênis</title>
 </head>
 
 <body>
-    <ul class="nav">
-        <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="index.html">Página Inicial</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="descricao.html">Descrição</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="funcionalidades.html">Funcionalidades</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="contato.html">Contato</a>
-        </li>
-    </ul>
-
-    <hr>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">HYPE</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Página Inicial</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="descricao.html">Descrição</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="funcionalidades.html">Funcionalidades</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contato.html">Contato</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
     <div class="container">
-        <h1>Bem-vindo ao HYPE</h1>
-        <p>Sistema desenvolvido para ajudar você a encontrar o tênis ideal através de avaliações detalhadas
-            e opiniões de outros usuários.</p>
-        <p>Explore as seções acima para saber mais sobre como funciona e suas principais funcionalidades.</p>
+        <div class="card shadow">
+            <div class="card-body">
+                <h1 class="card-title">Bem-vindo ao HYPE</h1>
+                <p class="card-text">Sistema desenvolvido para ajudar você a encontrar o tênis ideal através de avaliações detalhadas e opiniões de outros usuários.</p>
+                <p class="card-text">Explore as seções acima para saber mais sobre como funciona e suas principais funcionalidades.</p>
+            </div>
+        </div>
     </div>
 
 </body>
