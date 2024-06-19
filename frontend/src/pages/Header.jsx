@@ -6,6 +6,7 @@ const Header = () => {
     return (
 
         <div className="container-header">
+            <h1>HYPE</h1>
             <div className="links-header">
                 <Link to='/'><span>Ínicio</span></Link>
             </div>
