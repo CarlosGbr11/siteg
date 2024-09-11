@@ -2,7 +2,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Footer from './pages/Footer';
 import Header from './pages/Header';
 import Inicio from './components/Inicio';
-import Calçados from './components/Calçados';
+import Calcados from './components/Calcados';
 import Homem from './components/Homem';
 import Mulher from './components/Mulher';
 import Infantil from './components/Infantil';
@@ -34,7 +34,7 @@ function App() {
         <main>
           <Routes>
             <Route path='/' element={<Inicio />} />
-            <Route path='/calçados' element={<Calçados />} />
+            <Route path='/calcados' element={<Calcados />} />
             <Route path='/mulher' element={<Mulher />} />
             <Route path='/homem' element={<Homem />} />
             <Route path='/infantil' element={<Infantil />} />
