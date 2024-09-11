@@ -5,7 +5,7 @@ function Inicio() {
 
         <div className="carousel">
             <div className="carousel-indicators">
-                <p>teste</p>
+                <p>TELA INICIAL</p>
             </div>
         </div>
 
