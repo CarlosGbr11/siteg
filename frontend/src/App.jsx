@@ -2,6 +2,11 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Footer from './pages/Footer';
 import Header from './pages/Header';
 import Inicio from './components/Inicio';
+import Calçados from './components/Calçados';
+import Homem from './components/Homem';
+import Mulher from './components/Mulher';
+import Infantil from './components/Infantil';
+import Esportes from './components/Esportes';
 import ComprarTenis1 from './pages/ComprarTenis1';
 import ComprarTenis2 from './pages/ComprarTenis2';
 import ComprarTenis3 from './pages/ComprarTenis3';
@@ -15,6 +20,8 @@ import Ajuda from './pages/Ajuda';
 import Suporte from './pages/Suporte';
 import './App.css'
 
+
+
 function App() {
 
   return (
@@ -27,6 +34,11 @@ function App() {
         <main>
           <Routes>
             <Route path='/' element={<Inicio />} />
+            <Route path='/calçados' element={<Calçados />} />
+            <Route path='/mulher' element={<Mulher />} />
+            <Route path='/homem' element={<Homem />} />
+            <Route path='/infantil' element={<Infantil />} />
+            <Route path='/esportes' element={<Esportes />} />
             <Route path="/comprar/tenis1" element={<ComprarTenis1 />} />
             <Route path="/comprar/tenis2" element={<ComprarTenis2 />} />
             <Route path="/comprar/tenis3" element={<ComprarTenis3 />} />
