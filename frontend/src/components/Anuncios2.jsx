@@ -1,64 +1,89 @@
-import React from "react";
-import './Anuncios.css'
-import tenis1 from '../images/tenis1.jpg'; 
-import tenis2 from '../images/tenis2.jpg'; 
-import tenis3 from '../images/tenis3.jpg'; 
-import tenis4 from '../images/tenis4.jpg'; 
-import tenis5 from '../images/tenis5.jpg'; 
-import tenis6 from '../images/tenis6.jpg'; 
-import tenis7 from '../images/tenis7.jpg'; 
-import tenis8 from '../images/tenis8.jpg'; 
-import tenis9 from '../images/tenis9.jpg'; 
-
+import React, { useState } from "react";
+import './Anuncios.css';
+import feminino1 from '../images/feminino1.avif'; 
+import feminino2 from '../images/feminino2.avif'; 
+import feminino3 from '../images/feminino3.avif'; 
+import feminino4 from '../images/feminino4.avif'; 
+import feminino5 from '../images/feminino5.avif'; 
+import feminino6 from '../images/feminino6.avif'; 
+import feminino7 from '../images/feminino7.avif'; 
+import feminino8 from '../images/feminino8.avif'; 
+import feminino9 from '../images/feminino9.avif'; 
+import feminino10 from '../images/feminino10.avif'; 
+import feminino11 from '../images/feminino11.avif'; 
+import feminino12 from '../images/feminino12.avif'; 
+import feminino13 from '../images/feminino13.avif'; 
+import feminino14 from '../images/feminino14.avif'; 
+import feminino15 from '../images/feminino15.avif'; 
+import feminino16 from '../images/feminino16.avif'; 
+import feminino17 from '../images/feminino17.avif'; 
+import feminino18 from '../images/feminino18.avif'; 
 
 function Anuncios2() {
+    const anuncios = [
+        { id: 1, img: feminino1, nome: "Camiseta Flight Feminina", tipo: "casual", preco: "R$ 79,99" },
+        { id: 2, img: feminino2, nome: "Camiseta Flight Feminina", tipo: "casual", preco: "R$ 79,99" },
+        { id: 3, img: feminino3, nome: "Camiseta Sport Feminina", tipo: "casual", preco: "R$ 79,99" },
+        { id: 4, img: feminino4, nome: "Camiseta Flight Feminina", tipo: "casual", preco: "R$ 79,99" },
+        { id: 5, img: feminino5, nome: "Camiseta Flight Feminina", tipo: "casual", preco: "R$ 79,99" },
+        { id: 6, img: feminino6, nome: "Camiseta Flight Feminina", tipo: "casual", preco: "R$ 79,99" },
+        { id: 7, img: feminino7, nome: "Camiseta Flight Feminina", tipo: "casual", preco: "R$ 79,99" },
+        { id: 8, img: feminino8, nome: "Camiseta Flight Feminina", tipo: "casual", preco: "R$ 79,99" },
+        { id: 9, img: feminino9, nome: "Camiseta Flight Feminina", tipo: "casual", preco: "R$ 79,99" },
+        { id: 10, img: feminino10, nome: "Camiseta Flight Feminina", tipo: "casual", preco: "R$ 79,99" },
+        { id: 11, img: feminino11, nome: "Camiseta Flight Feminina", tipo: "casual", preco: "R$ 79,99" },
+        { id: 12, img: feminino12, nome: "Camiseta Flight Feminina", tipo: "casual", preco: "R$ 79,99" },
+        { id: 13, img: feminino13, nome: "Camiseta Flight Feminina", tipo: "casual", preco: "R$ 79,99" },
+        { id: 14, img: feminino14, nome: "Camiseta Flight Feminina", tipo: "casual", preco: "R$ 79,99" },
+        { id: 15, img: feminino15, nome: "Camiseta Flight Feminina", tipo: "casual", preco: "R$ 79,99" },
+        { id: 16, img: feminino16, nome: "Camiseta Flight Feminina", tipo: "casual", preco: "R$ 79,99" },
+        { id: 17, img: feminino17, nome: "Camiseta Flight Feminina", tipo: "casual", preco: "R$ 79,99" },
+        { id: 18, img: feminino18, nome: "Camiseta Flight Feminina", tipo: "casual", preco: "R$ 79,99" },
+        
+    ];
+
+    const [paginaAtual, setPaginaAtual] = useState(1);
+    const itensPorPagina = 9; 
+
+    const indiceUltimoItem = paginaAtual * itensPorPagina;
+    const indicePrimeiroItem = indiceUltimoItem - itensPorPagina;
+    const anunciosAtuais = anuncios.slice(indicePrimeiroItem, indiceUltimoItem);
+
+    const proximaPagina = () => {
+        if (paginaAtual < Math.ceil(anuncios.length / itensPorPagina)) {
+            setPaginaAtual(paginaAtual + 1);
+        }
+    };
+
+    const paginaAnterior = () => {
+        if (paginaAtual > 1) {
+            setPaginaAtual(paginaAtual - 1);
+        }
+    };
+
     return (
-        <div className="anuncios-container">
-            <a href="/comprar/tenis1" className="anuncio">
-                <img src={tenis1} alt="Tênis 1" />
-                <h3>DUNK LOW OG</h3>
-                <p>R$ 589,99</p>
-            </a>
-            <a href="/comprar/tenis2" className="anuncio">
-                <img src={tenis2} alt="Tênis 2" />
-                <h3>DUNK LOW RETRO</h3>
-                <p>R$ 639,99</p>
-            </a>
-            <a href="/comprar/tenis3" className="anuncio">
-                <img src={tenis3} alt="Tênis 3" />
-                <h3>AIR FORCE 1 ´07 LV8</h3>
-                <p>R$ 679,99</p>
-            </a>
-            <a href="/comprar/tenis4" className="anuncio">
-                <img src={tenis4} alt="Tênis 4" />
-                <h3>JORDAN 1 MID</h3>
-                <p>R$ 839,99</p>
-            </a>
-            <a href="/comprar/tenis5" className="anuncio">
-                <img src={tenis5} alt="Tênis 5" />
-                <h3>STAN SMITH</h3>
-                <p>R$ 339,99</p>
-            </a>
-            <a href="/comprar/tenis6" className="anuncio">
-                <img src={tenis6} alt="Tênis 6" />
-                <h3>FORUM 84 LOW</h3>
-                <p>R$ 579,99</p>
-            </a>
-            <a href="/comprar/tenis7" className="anuncio">
-                <img src={tenis7} alt="Tênis 7" />
-                <h3>HANDBALL SPEZIAL</h3>
-                <p>R$ 399,99</p>
-            </a>
-            <a href="/comprar/tenis8" className="anuncio">
-                <img src={tenis8} alt="Tênis 8" />
-                <h3>ADI2000</h3>
-                <p>R$ 799,99</p>
-            </a>
-            <a href="/comprar/tenis9" className="anuncio">
-                <img src={tenis9} alt="Tênis 9" />
-                <h3>SUPERSTAR XLG</h3>
-                <p>R$ 399,99</p>
-            </a>
+        <div>
+            <div className="anuncios-container">
+                {anunciosAtuais.map(anuncio => (
+                    <a href={`/comprar/tenis${anuncio.id}`} key={anuncio.id} className="anuncio">
+                        <img src={anuncio.img} alt={anuncio.nome} />
+                        <h3>{anuncio.nome}</h3>
+                        <h4>{anuncio.tipo}</h4>
+                        <p>{anuncio.preco}</p>
+                    </a>
+                ))}
+            </div>
+            
+            {/* Controles de navegação */}
+            <div className="paginacao">
+                <button onClick={paginaAnterior} disabled={paginaAtual === 1}>
+                    Anterior
+                </button>
+                <span>Página {paginaAtual} de {Math.ceil(anuncios.length / itensPorPagina)}</span>
+                <button onClick={proximaPagina} disabled={paginaAtual === Math.ceil(anuncios.length / itensPorPagina)}>
+                    Próximo
+                </button>
+            </div>
         </div>
     );
 }
