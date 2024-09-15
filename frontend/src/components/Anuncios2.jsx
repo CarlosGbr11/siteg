@@ -24,21 +24,21 @@ function Anuncios2() {
         { id: 1, img: feminino1, nome: "Camiseta Flight Feminina", tipo: "casual", preco: "R$ 79,99" },
         { id: 2, img: feminino2, nome: "Camiseta Flight Feminina", tipo: "casual", preco: "R$ 79,99" },
         { id: 3, img: feminino3, nome: "Camiseta Sport Feminina", tipo: "casual", preco: "R$ 79,99" },
-        { id: 4, img: feminino4, nome: "Camiseta Flight Feminina", tipo: "casual", preco: "R$ 79,99" },
-        { id: 5, img: feminino5, nome: "Camiseta Flight Feminina", tipo: "casual", preco: "R$ 79,99" },
-        { id: 6, img: feminino6, nome: "Camiseta Flight Feminina", tipo: "casual", preco: "R$ 79,99" },
-        { id: 7, img: feminino7, nome: "Camiseta Flight Feminina", tipo: "casual", preco: "R$ 79,99" },
-        { id: 8, img: feminino8, nome: "Camiseta Flight Feminina", tipo: "casual", preco: "R$ 79,99" },
-        { id: 9, img: feminino9, nome: "Camiseta Flight Feminina", tipo: "casual", preco: "R$ 79,99" },
-        { id: 10, img: feminino10, nome: "Camiseta Flight Feminina", tipo: "casual", preco: "R$ 79,99" },
-        { id: 11, img: feminino11, nome: "Camiseta Flight Feminina", tipo: "casual", preco: "R$ 79,99" },
-        { id: 12, img: feminino12, nome: "Camiseta Flight Feminina", tipo: "casual", preco: "R$ 79,99" },
-        { id: 13, img: feminino13, nome: "Camiseta Flight Feminina", tipo: "casual", preco: "R$ 79,99" },
+        { id: 4, img: feminino4, nome: "Camiseta Reflect Feminina", tipo: "casual", preco: "R$ 79,99" },
+        { id: 5, img: feminino5, nome: "Camiseta Trail Feminina", tipo: "casual", preco: "R$ 79,99" },
+        { id: 6, img: feminino6, nome: "Camiseta Hood Feminina", tipo: "casual", preco: "R$ 79,99" },
+        { id: 7, img: feminino7, nome: "Camiseta Over Feminina", tipo: "casual", preco: "R$ 79,99" },
+        { id: 8, img: feminino8, nome: "Camiseta Court Feminina", tipo: "casual", preco: "R$ 79,99" },
+        { id: 9, img: feminino9, nome: "Camiseta Victory Feminina", tipo: "casual", preco: "R$ 79,99" },
+        { id: 10, img: feminino10, nome: "Camiseta Tanglin Feminina", tipo: "casual", preco: "R$ 79,99" },
+        { id: 11, img: feminino11, nome: "Camiseta Icon Feminina", tipo: "casual", preco: "R$ 79,99" },
+        { id: 12, img: feminino12, nome: "Camiseta Sport Feminina", tipo: "casual", preco: "R$ 79,99" },
+        { id: 13, img: feminino13, nome: "Camiseta Knit Feminina", tipo: "casual", preco: "R$ 79,99" },
         { id: 14, img: feminino14, nome: "Camiseta Flight Feminina", tipo: "casual", preco: "R$ 79,99" },
-        { id: 15, img: feminino15, nome: "Camiseta Flight Feminina", tipo: "casual", preco: "R$ 79,99" },
-        { id: 16, img: feminino16, nome: "Camiseta Flight Feminina", tipo: "casual", preco: "R$ 79,99" },
-        { id: 17, img: feminino17, nome: "Camiseta Flight Feminina", tipo: "casual", preco: "R$ 79,99" },
-        { id: 18, img: feminino18, nome: "Camiseta Flight Feminina", tipo: "casual", preco: "R$ 79,99" },
+        { id: 15, img: feminino15, nome: "Camiseta Essent Feminina", tipo: "casual", preco: "R$ 79,99" },
+        { id: 16, img: feminino16, nome: "Camiseta Sports Feminina", tipo: "casual", preco: "R$ 79,99" },
+        { id: 17, img: feminino17, nome: "Camiseta ADV Feminina", tipo: "casual", preco: "R$ 79,99" },
+        { id: 18, img: feminino18, nome: "Camiseta Dri-FIT Feminina", tipo: "corrida", preco: "R$ 79,99" },
         
     ];
 
@@ -74,7 +74,6 @@ function Anuncios2() {
                 ))}
             </div>
             
-            {/* Controles de navegação */}
             <div className="paginacao">
                 <button onClick={paginaAnterior} disabled={paginaAtual === 1}>
                     Anterior
