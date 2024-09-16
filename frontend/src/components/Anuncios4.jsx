@@ -22,7 +22,7 @@ import inf18 from '../images/inf18.avif';
 
 function Anuncios3() {
     const anuncios = [
-        { id: 1, img: inf1, nome: "Camiseta Sports Infantil]", tipo: "casual", preco: "R$ 79,99" },
+        { id: 1, img: inf1, nome: "Camiseta Sports Infantil", tipo: "casual", preco: "R$ 79,99" },
         { id: 2, img: inf2, nome: "Camiseta Patch Infantil", tipo: "casual", preco: "R$ 79,99" },
         { id: 3, img: inf3, nome: "Camiseta FIT Infantil", tipo: "casual", preco: "R$ 79,99" },
         { id: 4, img: inf4, nome: "Camiseta HTG Infantil", tipo: "casual", preco: "R$ 79,99" },
