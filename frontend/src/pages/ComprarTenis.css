@@ -11,18 +11,18 @@
     background-color: #fff;
 }
 
-.tenis-img {
+.prod-img {
     max-width: 60%;
     height: auto;
     border-radius: 10px;
 }
 
-.tenis-nome {
+.prod-nome {
     font-size: 24px;
     text-align: center;
 }
 
-.tenis-preco {
+.prod-preco {
     font-size: 20px;
     color: #888;
     margin-bottom: 20px;
