@@ -5,8 +5,8 @@ function ComprarTenis1() {
   return (
     <div className="comprar-container">
       <img src={tenis1} alt="Tênis 1" className="prod-img" />
-      <h3 className="prod-nome">DUNK LO OG</h3>
-      <p className="prod-preco">R$ 589,99</p>
+      <h3 className="prod-nome">Dunk Low Viotech</h3>
+      <p className="prod-preco">R$ 499,99</p>
     </div>
   );
 }
