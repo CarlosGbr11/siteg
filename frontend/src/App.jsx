@@ -7,6 +7,7 @@ import Homem from './components/Homem';
 import Mulher from './components/Mulher';
 import Infantil from './components/Infantil';
 import ComprarTenis1 from './pages/ComprarTenis1';
+import ComprarFem from './pages/ComprarFem';
 import Ajuda from './pages/Ajuda';
 import Suporte from './pages/Suporte';
 import './App.css'
@@ -30,6 +31,7 @@ function App() {
             <Route path='/homem' element={<Homem />} />
             <Route path='/infantil' element={<Infantil />} />
             <Route path="/comprar/tenis1" element={<ComprarTenis1 />} />
+            <Route path="/comprar/em" element={<ComprarFem />} />
             <Route path='/ajuda' element={<Ajuda />} />
             <Route path='/suporte' element={<Suporte />} />
           </Routes>
