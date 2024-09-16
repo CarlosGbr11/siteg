@@ -12,7 +12,6 @@ const Header = () => {
                 <Link to='/mulher'><span>MULHER</span></Link>
                 <Link to='/homem'><span>HOMEM</span></Link>
                 <Link to='/infantil'><span>INFANTIL</span></Link>
-                <Link to='/esportes'><span>ESPORTES</span></Link>
             </div>
         </div>
     )
