@@ -1,6 +1,5 @@
 import tenis1 from '../images/tenis1.jpg';
-import './ComprarTenis.css';
-import './Comentarios.css';
+import './Comprar.css';
 
 function ComprarTenis1() {
   return (
