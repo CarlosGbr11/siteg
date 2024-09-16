@@ -66,7 +66,7 @@ function Anuncios3() {
         <div>
             <div className="anuncios-container">
                 {anunciosAtuais.map(anuncio => (
-                    <a href={`/comprar/tenis${anuncio.id}`} key={anuncio.id} className="anuncio">
+                    <a href={`/comprar/inf${anuncio.id}`} key={anuncio.id} className="anuncio">
                         <img src={anuncio.img} alt={anuncio.nome} />
                         <h3>{anuncio.nome}</h3>
                         <h4>{anuncio.tipo}</h4>
