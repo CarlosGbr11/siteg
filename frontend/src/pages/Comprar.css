@@ -1,0 +1,93 @@
+.comprar-container {
+    display: flex;
+    justify-content: flex-start; /* Alinha os itens à esquerda */
+    align-items: flex-start;
+    padding: 20px; /* Reduza ou mantenha o padding conforme necessário */
+    max-width: 1200px; /* Ajuste a largura máxima conforme necessário */
+    margin: 0 auto; /* Centraliza o contêiner na página */
+  }
+  
+  .img-gallery {
+    display: grid; /* Usando grid para melhor controle de layout */
+    grid-template-columns: repeat(2, 1fr); /* Duas colunas de largura igual */
+    gap: 20px; /* Espaço entre as imagens */
+    margin-left: 0; /* Remove qualquer margem à esquerda, se existir */
+  }
+  
+  .img-gallery .prod-img {
+    width: 350px; /* Aumenta a largura das imagens para 350px */
+    height: 300px; /* Mantém a altura fixa das imagens */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    object-fit: cover; /* Ajusta para cobrir a área sem distorcer a imagem */
+    transition: transform 0.3s ease; /* Adiciona transição suave ao transformar */
+  }
+  
+  .img-gallery .prod-img:hover {
+    transform: scale(1.05); /* Aumenta a imagem em 5% ao passar o mouse */
+    cursor: pointer; /* Muda o cursor para indicar interatividade */
+  }
+  
+  .prod-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column; /* Organiza os elementos em coluna */
+    align-items: flex-start; /* Alinha à esquerda */
+    padding-left: 40px;
+  }
+  
+  .prod-nome {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .prod-preco {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .prod-descricao {
+    font-size: 16px; /* Ajuste o tamanho da fonte conforme necessário */
+    color: #666; /* Uma cor cinza suave */
+    margin: 10px 0; /* Espaço acima e abaixo da descrição */
+  }
+  
+  .size-selector {
+    margin-bottom: 20px;
+  }
+  
+  .sizes {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .size-button {
+    padding: 10px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .size-button.selected {
+    background-color: #f0f0f0;
+  }
+  
+  .size-button:hover {
+    background-color: #eee;
+  }
+  
+  .add-to-cart-button {
+    padding: 15px 30px;
+    background-color: #494949;
+    border-radius: 20px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .add-to-cart-button:hover {
+    background-color: #8f8e8e;
+  }
