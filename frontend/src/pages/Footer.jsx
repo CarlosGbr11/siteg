@@ -14,27 +14,19 @@ const Footer = () => {
                     </div>
                     <div className="footer-links_div">
                         <h4>Ajuda</h4>
-                        <a href="/ajuda">
-                            <p>Como comentar</p>
-                        </a>
-                        <a href="/ajuda">
-                            <p>Resolver problemas</p>
-                        </a>
+                        <p>Como comentar</p>
+                        <p>Resolver problemas</p>
                     </div>
                     <div className="footer-links_div">
                         <h4>Suporte</h4>
-                        <a href="/suporte">
-                            <p>Política de moderação</p>
-                        </a>
-                        <a href="/suporte">
-                            <p>Contato</p>
-                        </a>
+                        <p>Política de moderação</p>
+                        <p>Contato</p>
                     </div>
                     <div className="footer-links_div">
                         <h4>Mídia Social</h4>
                         <div className="socialmedia">
-                        <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer"><p><img src={ig} alt="insta" /></p></a>
-                        <a href="https://web.whatsapp.com/" target="_blank" rel="noopener noreferrer"><p><img src={wp} alt="wpp" /></p></a>
+                            <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer"><p><img src={ig} alt="insta" /></p></a>
+                            <a href="https://web.whatsapp.com/" target="_blank" rel="noopener noreferrer"><p><img src={wp} alt="wpp" /></p></a>
                         </div>
                     </div>
                 </div>
@@ -48,8 +40,8 @@ const Footer = () => {
                         </p>
                     </div>
                     <div className="footer-below-links">
-                        <a href="/terms"><div><p>Termos e condições</p></div></a>
-                        <a href="/privacy"><div><p>Privacidade</p></div></a>
+                        <div><p>Termos e condições</p></div>
+                        <div><p>Privacidade</p></div>
                     </div>
                 </div>
             </div>
