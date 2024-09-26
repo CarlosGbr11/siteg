@@ -34,6 +34,7 @@ function Inicio() {
             <div className="slide">
                 <img src={images[currentIndex]} alt={`Slide ${currentIndex + 1}`} />
             </div>
+
             <div className='text'>
                 <p>Cada item em nossa loja foi escolhido com atenção ao detalhe e ao estilo, garantindo que você encontre itens de alta qualidade que atendem às suas expectativas de moda e sofisticação.</p>
             </div>
