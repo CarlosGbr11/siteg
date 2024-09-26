@@ -10,11 +10,11 @@ const Footer = () => {
                 <div className="footer-links">
                     <div className="footer-links_div">
                         <h4>Quem Somos?</h4>
-                        <h5>Somos uma comunidade apaixonada por calçados, dedicada a fornecer uma plataforma onde os usuários podem compartilhar suas opiniões</h5>
+                        <h5>Nosso portfólio é cuidadosamente curado, trazendo as últimas tendências e peças atemporais que refletem o estilo e a sofisticação que nossos clientes merecem.</h5>
                     </div>
                     <div className="footer-links_div">
                         <h4>Ajuda</h4>
-                        <p>Como comentar</p>
+                        <p>Como comprar</p>
                         <p>Resolver problemas</p>
                     </div>
                     <div className="footer-links_div">
