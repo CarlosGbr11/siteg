@@ -1,22 +1,24 @@
 .container-header {
+  position: relative;
+  z-index: 2;
   display: flex;
-  justify-content: space-between; 
-  align-items: center; 
+  justify-content: space-between;
+  align-items: center;
   padding: 40px 20px;
-  background-color: #333; 
+  background-color: #333;
 }
 
 .container-header h1 {
   color: rgb(255, 255, 255);
-  font-size:25px;
+  font-size: 25px;
 }
 
 .links-header {
   display: flex;
-  gap: 20px; 
+  gap: 20px;
 }
 
 .links-header a {
-  color: white; 
-  text-decoration: none; 
+  color: white;
+  text-decoration: none;
 }
