@@ -1,50 +1,51 @@
 .carousel {
-    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
     text-align: center;
 }
 
-.carousel-image {
-    width: 80%;
-    height: auto;
-    margin: auto;
+.slide {
+    position: relative;
+    overflow: hidden;
 }
 
-.carousel-button {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.5);
-    border: none;
-    color: white;
-    font-size: 24px;
-    padding: 10px;
-    cursor: pointer;
-    z-index: 1;
+.slide img {
+    width: 100%;
+    max-height: 500px;
+    object-fit: cover;
 }
 
-.carousel-button.left {
-    left: 10px;
+.gallery {
+    display: flex; 
+    justify-content: center; 
+    margin-top: 100px;
+    gap: 15px; 
 }
 
-.carousel-button.right {
-    right: 10px;
+.gallery img {
+    width: 280px; 
+    height: auto; 
+    cursor: pointer; 
+    transition: transform 0.3s; 
 }
 
-.carousel-indicators {
-    display: flex;
-    justify-content: center;
-    margin-top: 10px;
+.gallery img:hover {
+    transform: scale(1.05); 
 }
 
-.indicator {
-    height: 15px;
-    width: 15px;
-    margin: 0 5px;
-    background-color: gray;
-    border-radius: 50%;
-    display: inline-block;
+.text p {
+    color: rgb(54, 54, 54);
+    margin-top: 55px;
 }
 
-.indicator.active {
-    background-color: black;
+@media (max-width: 768px) {
+    .gallery img {
+        width: 150px; 
+    }
+}
+
+@media (max-width: 480px) {
+    .gallery img {
+        width: 100px; 
+    }
 }
